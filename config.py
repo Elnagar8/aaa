@@ -1,4 +1,4 @@
-from os import getenv
+ from os import getenv
 
 from dotenv import load_dotenv
 
@@ -58,7 +58,7 @@ else:
 if str(getenv("LOG_SESSION")).strip() == "":
     LOG_SESSION = str(None)
 else:
-    LOG_SESSION = str(getenv("LOG_SESSION"))
+    LOG_SESSION = str(getenv("-1001817954059"))
 
 if str(getenv("LIMIT")).strip().upper() == "FALSE":
     PL_LIMIT = "FALSE"
