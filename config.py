@@ -8,27 +8,27 @@ load_dotenv()
 
 get_queue = {}
 BOT_TOKEN = getenv("BOT_TOKEN")
-API_ID = int(getenv("API_ID", ""))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "25285918"))
+API_HASH = getenv("API_HASH", "b8325224911adaa952aee661d7ac0810")
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", "10"))
 ASSISTANT_PREFIX = list(getenv("ASSISTANT_PREFIX", ".").split())
-MONGO_DB_URI = getenv("MONGO_DB_URI")
-SUDO_USERS = list(map(int, getenv("SUDO_USERS", "").split()))
-OWNER_ID = list(map(int, getenv("OWNER_ID", "").split()))
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://dream:dream@cluster0.pm3y5me.mongodb.net/dream?retryWrites=true&w=majority")
+SUDO_USERS = list(map(int, getenv("SUDO_USERS", "1970797144").split()))
+OWNER_ID = list(map(int, getenv("OWNER_ID", "1970797144").split()))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001817954059"))
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Shadow")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 
-UPSTREAM_REPO = "https://github.com/TechShreyash/SiestaXMusic"
+UPSTREAM_REPO = "https://github.com/Elnagar8/aaa"
 UPSTREAM_BRANCH = "main"
 
-SUPPORT_CHANNEL = "https://t.me/TechZBots"
-SUPPORT_GROUP = "https://t.me/TechZBots_Support"
+SUPPORT_CHANNEL = "https://t.me/FA9SH"
+SUPPORT_GROUP = "https://t.me/S150D"
 
-THUMBNAIL = getenv("THUMB_LINK") 
+THUMBNAIL = getenv("THUMB_LINK", "https://telegra.ph/file/74047a1ba4804eddc787e.jpg") 
 
-botusername = str(getenv("BOT_USERNAME"))
+botusername = str(getenv("BOT_USERNAME", "fn1bot"))
 
 if str(getenv("STRING_SESSION1")).strip() == "":
     STRING1 = str(None)
