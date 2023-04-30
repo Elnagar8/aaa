@@ -15,6 +15,7 @@ ASSISTANT_PREFIX = list(getenv("ASSISTANT_PREFIX", ".").split())
 MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://dream:dream@cluster0.pm3y5me.mongodb.net/dream?retryWrites=true&w=majority")
 SUDO_USERS = list(map(int, getenv("SUDO_USERS", "1970797144").split()))
 OWNER_ID = list(map(int, getenv("OWNER_ID", "1970797144").split()))
+LOG_SESSION = int(getenv("LOG_SESSION", "-1001817954059"))
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001817954059"))
 MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Shadow")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
@@ -54,11 +55,6 @@ if str(getenv("STRING_SESSION5")).strip() == "":
     STRING5 = str(None)
 else:
     STRING5 = str(getenv("STRING_SESSION5"))
-
-if str(getenv("LOG_SESSION")).strip() == "":
-    LOG_SESSION = str(None)
-else:
-    LOG_SESSION = str(getenv("-1001817954059"))
 
 if str(getenv("LIMIT")).strip().upper() == "FALSE":
     PL_LIMIT = "FALSE"
